@@ -5,7 +5,6 @@ require_once("conexion.php");
 
 $sql= "SELECT * FROM jugador";
 $resultado  = mysqli_query($conexion,$sql);
-
 if($resultado ){
 	
 	echo "<script>
@@ -15,7 +14,7 @@ if($resultado ){
 	echo
 	"<script>
 	alert('No hay');
-	
+
 	</script>";
 }
 ?>
