@@ -9,33 +9,27 @@ class FormularioJugador extends React.Component {
   constructor(props) {
     super(props);
   } 
-        datosRef= React.createRef();
-        obtenerDatos = (e) =>{
-        e.preventDefault();
-        console.log(this.obtenerDatos.current.value);
-
-        }
-
+        
 
   render() { 
     return (
-    <form onSubmit={this.obtenerDatos}>
+    <form >
      <div className= "formulario container">
-      <div className= "jumbotron">
+      <div className= "row">
        <p className= "lead text-center">CONCURSO DE PREGUNTAS</p>
         
         <Form>
             <FormGroup>
                 <Label for="Nombre jugador">Datos del jugador</Label>
-                    <Input id="Nombre jugador" name="Nombre" placeholder="Digite su nombre"type="text"  />
+                    <Input id="mombreJugador" name="Nombre" placeholder="Digite su nombre"type="text"  />
                         </FormGroup>
             <FormGroup>           
                 <Label for="Apellido jugador">Apellido </Label>
-                     <Input id="Apellido jugador" name="apellido" placeholder="Digite su apellido"  type="text" />
+                     <Input id="apellidoJugador" name="apellido" placeholder="Digite su apellido"  type="text" />
                         </FormGroup>
             <FormGroup>
                 <Label for="Edad jugador"> Edad</Label>
-                    <Input id="edad jugador" name="edad" placeholder="Digite su edad" type="int"/>
+                    <Input id="edadJugador" name="edad" placeholder="Digite su edad" type="int"/>
                         </FormGroup>
            
             <button type="submit" type="submit" class="btn btn-success"> Empezar el juego </button>
